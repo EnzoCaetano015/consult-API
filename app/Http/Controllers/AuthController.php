@@ -17,7 +17,7 @@ class AuthController extends Controller
         ]);
     
         // Busca o usuário no banco de dados
-        $user = DB::table('Usuario')
+        $user = DB::table('usuario')
             ->where('nome', $request->nome)
             ->where('senha', $request->senha)
             ->first();
